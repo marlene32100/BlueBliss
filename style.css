@@ -1,0 +1,1008 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: inline-block;
+}
+
+/* TYPOGRAPHY */
+
+.company-name {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  color: #f8f9fa;
+  font-size: 4rem;
+}
+
+.company-subtitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-stretch: extra-expanded;
+
+  color: #f8f9fa;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h2 span {
+  font-size: 3rem;
+}
+
+.navbar-title {
+  text-transform: uppercase;
+}
+
+.navbar-subtitle {
+  font-size: 1.6rem;
+}
+
+a.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.highlight-text:hover {
+  font-weight: 800;
+}
+
+.title-section {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 6rem;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 6rem;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.about-text,
+.about-text strong,
+.benefit-text {
+  font-size: 1.6rem;
+}
+
+.how {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.project-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.number-project {
+  font-size: 1.6rem;
+}
+
+.text-scroll-me {
+  font-size: 1.6rem;
+}
+
+/* COLORS */
+body {
+  background-color: #f8f9fa;
+}
+
+.highlight-text {
+  color: #f8f9fa;
+}
+
+.highlight-text:hover {
+  color: #f8f9fa;
+}
+
+.serenity {
+  color: #1277a6;
+}
+
+.white {
+  color: #f8f9fa;
+}
+
+.bg-serenity {
+  background-color: #1277a6;
+}
+
+.title-section {
+  color: #1277a6;
+}
+
+.contact-title {
+  color: #f8f9fa;
+}
+
+.bg-black {
+  background-color: #021822;
+}
+
+.bg-black-light {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #021822;
+}
+
+.project-title {
+  color: #021822;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f8f9fa;
+}
+
+.project-title:hover,
+.project-title:active {
+  color: #f8f9fa;
+}
+
+.colored-section {
+  background-color: #1277a6;
+}
+
+.about-text {
+  color: #f8f9fa;
+}
+
+.benefit-text {
+  color: black;
+}
+
+.about-text strong {
+  color: #cb0c59;
+}
+
+/* LANDING */
+.arrow-down {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bounce {
+  animation: bounce 4s;
+  animation-iteration-count: infinite;
+}
+
+a .bounce {
+  cursor: pointer;
+}
+
+/* https://techstacker.com/how-to-animate-a-bouncing-svg-icon-with-css/ */
+
+@-webkit-keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+
+/* NAVBAR */
+
+.menu-overlay {
+  width: 100wv;
+  height: 100vh;
+  background-color: #021822;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+  display: none;
+}
+
+.menu-title {
+  color: #f8f9fa;
+  font-family: "Kanit", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.toggler {
+  cursor: pointer;
+}
+
+a .menu-title {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a .menu-title:hover,
+a .menu-title:focus {
+  text-decoration: none;
+  color: #1277a6;
+}
+
+.closing-icon {
+  font-size: 3rem;
+  color: rgb(254, 255, 254);
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.text-menu {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav.navbar.navbar-expand-lg {
+  width: 100vw;
+}
+
+.navbar-brand img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.fas.fa-bars {
+  font-size: 2.5rem;
+  color: #1277a6;
+  background-color: #f8f9fa;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  padding-left: 0.7rem;
+  padding-top: 0.5rem;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.fixed-top {
+  z-index: 9000;
+}
+
+/* HOME PAGE */
+
+.contact-overlay {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: rgba(250, 250, 250, 0.5);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 9999;
+}
+
+.contact-overlay:hover {
+  cursor: pointer;
+  animation: glow 800ms ease-out infinite alternate;
+  background: white;
+  border-color: white;
+  box-shadow: 0 0 5px rgba(201, 202, 203, 0.2),
+    inset 0 0 5px rgba(131, 88, 241, 0.1), 0 2px 0 white;
+  color: #efe;
+  outline: none;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f8f9fa;
+  width: 25rem;
+  height: 25rem;
+}
+
+.overlay-container-smaller {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f8f9fa;
+  width: 23rem;
+  height: 23rem;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgb(254, 255, 254);
+    box-shadow: 0 0 5px rgba(4, 114, 225, 0.2),
+      inset 0 0 5px rgba(131, 88, 241, 0.1), 0 2px 0 white;
+  }
+  100% {
+    border-color: white;
+    box-shadow: 0 0 20px rgba(140, 211, 241, 0.6),
+      inset 0 0 10px rgba(1, 43, 49, 0.4), 0 2px 0 white;
+  }
+}
+
+.contact-overlay i {
+  font-size: 4rem;
+  color: #1277a6;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#home-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+#home-page-video {
+  position: fixed;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.key-words h2 {
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  background: #1277a6;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: heartbeat 3s infinite;
+  background: rgba(250, 250, 250, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0px 0px -60px;
+  color: #1277a6;
+}
+
+#experience-text {
+  position: absolute;
+  top: 30rem;
+  right: 3rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+#competitive-text {
+  position: absolute;
+  top: 35rem;
+  left: 1rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+}
+
+#creative-text {
+  position: absolute;
+  top: 40rem;
+  right: 12rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+}
+
+#image-text {
+  position: absolute;
+  bottom: 8rem;
+  left: 2rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+/* ABOUT SECTION */
+.scroll-down {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.about-section {
+  position: relative;
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-container-about {
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-cta {
+  background-color: rgb(219, 98, 151);
+  padding: 8px 32px;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  -webkit-box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
+  box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
+  background-color: rgb(218, 54, 125);
+}
+
+.line-about {
+  border-top: 2px solid black;
+  width: 90%;
+}
+
+.col-about-text {
+  height: 50%;
+}
+
+.bottom-text {
+  bottom: 0;
+  padding-right: 15px;
+}
+
+.about-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bulbs-image {
+  object-fit: contain;
+  margin-top: 10rem;
+}
+
+.about-first-row,
+.about-second-row {
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
+#team-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* BENEFIT */
+.benefit-section {
+  position: relative;
+}
+
+.four-reasons {
+  margin-top: 6rem;
+}
+
+.benefit-row {
+  overflow: hidden;
+}
+
+.fix-area {
+  position: relative;
+  background-attachment: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.col-benefit-area {
+  position: relative;
+}
+
+#scroll-image {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#scroll-image::-webkit-scrollbar {
+  display: none;
+}
+
+.benefit-image {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  right: 0;
+}
+
+.text-light {
+  padding: 5rem;
+  border: 2px solid white;
+}
+
+.overlay-benefit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*
+  height: 40%;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 30%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 30%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+    
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  */
+  z-index: 5555;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.circle-benefit {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  animation: heartbeat 3s infinite;
+}
+
+.overlay-scroll {
+  position: absolute;
+  right: 1.5rem;
+  top: 5rem;
+  z-index: 5555;
+  color: rgba(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text-scroll-me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PROJECTS SECTION */
+.project-section {
+  position: relative;
+}
+
+.title-project-lateral {
+  bottom: 15rem;
+}
+
+.number-project {
+  display: inline-block;
+}
+
+.number-project,
+.number-project span {
+  color: #f8f9fa;
+}
+
+.bottom-section {
+  height: auto;
+}
+
+.bottom-section .row .col-12 {
+  padding-right: 0;
+}
+
+.project-title {
+  cursor: pointer;
+}
+
+.bottom-section a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.bottom-section a:hover {
+  color: #1277a6;
+}
+
+/* CONTACT SECTION */
+.contact-form {
+  width: 90%;
+  margin: auto;
+  background-color: rgba();
+  color: #f8f9fa;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  background-color: #021822;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form label,
+.contact-form ::placeholder,
+input {
+  font-size: 1.6rem;
+}
+
+.form-row,
+.form-group {
+  padding: 1.5rem;
+}
+
+a .contact-mail,
+a .footer-icon {
+  font-size: 4rem;
+  text-decoration: none;
+  color: #1277a6;
+}
+
+a .contact-mail:hover,
+a .footer-icon:hover {
+  color: rgb(218, 54, 125);
+}
+
+.contact-section {
+  position: relative;
+}
+
+.link-to-policy {
+  font-size: 1.6rem;
+}
+
+.alert {
+  width: 25rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  height: 5rem;
+  line-height: 1.5rem;
+}
+
+.alert strong {
+  font-size: 1.6rem;
+}
+
+#successfully-submitted {
+  display: none;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: rgb(254, 255, 254);
+  bottom: 0;
+  width: 100%;
+}
+
+/* PRIVACY PAGE */
+.privacy-title {
+  margin-bottom: 0;
+  padding-top: 5rem;
+}
+
+.privacy-section h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid slategray;
+}
+.privacy-section h2 {
+  font-size: 2.5rem;
+}
+.privacy-sectiion p,
+.privacy-sectiion li {
+  font-size: 1.6rem;
+}
+
+.strong-privacy {
+  font-size: 1.6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 360px) {
+  #competitive-text {
+    left: 8rem;
+  }
+  #creative-text {
+    right: 15rem;
+  }
+  .project-title {
+    font-size: 4rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  .company-name {
+    font-size: 5rem;
+  }
+  .overlay-container {
+    width: 30rem;
+    height: 30rem;
+  }
+  .overlay-container-smaller {
+    height: 28rem;
+    width: 28rem;
+  }
+  #competitive-text {
+    left: 12rem;
+  }
+  #creative-text {
+    right: 22rem;
+  }
+  .benefit-image {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+    right: 0;
+  }
+  .project-title {
+    font-size: 6rem;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*
+  .title-section {
+    position: absolute;
+    bottom: 20rem;
+    left: 2rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+  }
+  */
+  .company-name {
+    font-size: 6rem;
+  }
+  .overlay-container {
+    width: 40rem;
+    height: 40rem;
+  }
+  .overlay-container-smaller {
+    height: 38rem;
+    width: 38rem;
+  }
+  .key-words h2 {
+    font-size: 5rem;
+  }
+  #experience-text {
+    position: absolute;
+    top: 40rem;
+    right: 5rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+  }
+
+  #competitive-text {
+    position: absolute;
+    top: 43rem;
+    left: 20rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+  }
+
+  #creative-text {
+    position: absolute;
+    top: 48rem;
+    left: 30rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+  }
+
+  #image-text {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+  }
+
+  .circle {
+    top: 15rem;
+    left: 5rem;
+  }
+
+  .project-title {
+    font-size: 7rem;
+  }
+
+  .title-section {
+    font-family: 4.5rem;
+  }
+  .contact-form {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .circle {
+    left: 20rem;
+  }
+  #experience-text {
+    right: 20rem;
+  }
+  #competitive-text {
+    left: 42rem;
+  }
+  #image-text {
+    left: 15rem;
+  }
+  .title-section {
+    font-size: 5rem;
+  }
+  .project-title {
+    font-size: 8rem;
+  }
+  .about-section {
+    height: 100vh;
+  }
+  .about-second-row {
+    margin-top: 6rem;
+  }
+  .contact-form {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  circle {
+    left: 25rem;
+  }
+  #experience-text {
+    right: 35rem;
+  }
+  #competitive-text {
+    left: 48rem;
+  }
+  #image-text {
+    left: 20rem;
+  }
+  .text-container-about {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .title-section {
+    font-family: 6rem;
+  }
+  .project-title {
+    font-size: 9rem;
+  }
+}
