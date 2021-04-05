@@ -580,8 +580,8 @@ nav.navbar.navbar-expand-lg {
 
 .flip-card {
   background-color: transparent;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: 1px solid #f1f1f1;
   -webkit-perspective: 1000px;
   perspective: 1000px; /*Remove this if you don't want the 3D effect */
@@ -623,8 +623,8 @@ nav.navbar.navbar-expand-lg {
   position: absolute;
   z-index: 9;
   border: 2px solid white;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -655,8 +655,8 @@ nav.navbar.navbar-expand-lg {
 }
 
 .flip-card-front img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 /* Style the back side */
@@ -668,7 +668,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .flip-card-back p {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Kanit", sans-serif;
   position: absolute;
   top: 35%;
@@ -676,6 +676,10 @@ nav.navbar.navbar-expand-lg {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.flip-card-overlay p {
+  font-weight: 600;
 }
 
 .btn-card {
@@ -722,9 +726,6 @@ nav.navbar.navbar-expand-lg {
 }
 .ready-row {
   height: 20rem;
-  background-image: url(media/images/blue-texture.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .icon-arrow {
@@ -733,6 +734,30 @@ nav.navbar.navbar-expand-lg {
 
 .spaced-content {
   margin: 5rem auto;
+  font-size: 2rem;
+}
+
+.spaced-content-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ready-to-work {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.start-link:hover {
+  text-decoration: none;
+}
+
+.start:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #021822;
+  text-decoration: none;
 }
 
 /* PROJECTS SECTION */
@@ -898,8 +923,20 @@ footer {
   }
   .flip-card,
   .flip-card-front img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+  }
+  .flip-card-overlay {
+    position: absolute;
+    z-index: 9;
+    border: 2px solid white;
+    height: 20rem;
+    width: 20rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -922,6 +959,11 @@ footer {
   }
   .contact-form {
     width: 80%;
+  }
+  .flip-card,
+  .flip-card-front img {
+    height: 300px;
+    width: 300px;
   }
 }
 
@@ -961,6 +1003,24 @@ footer {
   }
   .mockup-image {
     padding-bottom: 1rem;
+  }
+  .ready-to-work {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .start {
+    font-size: 2.5rem;
+  }
+  .spaced-content-title {
+    font-size: 7rem;
+    text-align: right;
+  }
+  .spaced-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .flip-cards-area {
+    padding-top: 3rem;
   }
 }
 
