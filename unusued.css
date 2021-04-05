@@ -1,0 +1,268 @@
+.highlight-text:hover {
+  font-weight: 800;
+}
+
+.highlight-text {
+  color: #f8f9fa;
+}
+
+.highlight-text:hover {
+  color: #f8f9fa;
+}
+.benefit-text {
+  color: black;
+}
+.arrow-down {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bounce {
+  animation: bounce 4s;
+  animation-iteration-count: infinite;
+}
+
+a .bounce {
+  cursor: pointer;
+}
+
+/* https://techstacker.com/how-to-animate-a-bouncing-svg-icon-with-css/ */
+
+@-webkit-keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+.key-words h2 {
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  background: #1277a6;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: heartbeat 3s infinite;
+  background: rgba(250, 250, 250, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0px 0px -60px;
+  color: #1277a6;
+}
+
+#experience-text {
+  position: absolute;
+  top: 30rem;
+  right: 3rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+#competitive-text {
+  position: absolute;
+  top: 35rem;
+  left: 1rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+}
+
+#creative-text {
+  position: absolute;
+  top: 40rem;
+  right: 12rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+}
+
+#image-text {
+  position: absolute;
+  bottom: 8rem;
+  left: 2rem;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  padding: 0 1em;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+}
+#team-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* BENEFIT */
+.benefit-section {
+  position: relative;
+}
+
+.four-reasons {
+  margin-top: 6rem;
+}
+
+.benefit-row {
+  overflow: hidden;
+}
+
+.fix-area {
+  position: relative;
+  background-attachment: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.col-benefit-area {
+  position: relative;
+}
+
+#scroll-image {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#scroll-image::-webkit-scrollbar {
+  display: none;
+}
+
+.benefit-image {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  right: 0;
+}
+
+.text-light {
+  padding: 5rem;
+  border: 2px solid white;
+}
+
+.overlay-benefit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*
+    height: 40%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 30%),
+      -8px -8px 12px 0 rgb(255 255 255 / 30%);
+    box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 30%),
+      -8px -8px 12px 0 rgb(255 255 255 / 30%);
+      
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    */
+  z-index: 5555;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.circle-benefit {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  animation: heartbeat 3s infinite;
+}
+
+.overlay-scroll {
+  position: absolute;
+  right: 1.5rem;
+  top: 5rem;
+  z-index: 5555;
+  color: rgba(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text-scroll-me {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
