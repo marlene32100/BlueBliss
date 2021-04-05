@@ -31,12 +31,13 @@ span {
   text-transform: uppercase;
   color: #f8f9fa;
   font-size: 4rem;
+  font-weight: 800;
 }
 
 .company-subtitle {
   font-size: 2rem;
   text-transform: uppercase;
-  font-stretch: extra-expanded;
+  letter-spacing: 0.5rem;
 
   color: #f8f9fa;
 }
@@ -55,6 +56,19 @@ p {
 
 h2 span {
   font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+address {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.2rem;
 }
 
 .navbar-title {
@@ -79,6 +93,7 @@ a.nav-link {
   text-transform: uppercase;
   font-weight: 800;
   margin-top: 6rem;
+  padding-top: 5rem;
   font-family: "Kanit", sans-serif;
   margin-bottom: 6rem;
   border-bottom: 1px solid #f8f9fa;
@@ -168,6 +183,10 @@ footer {
 
 .colored-section {
   background-color: #1277a6;
+}
+
+h3.blue-text {
+  color: #1277a6;
 }
 
 .about-text {
@@ -326,8 +345,8 @@ nav.navbar.navbar-expand-lg {
 
 .contact-overlay {
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 2rem;
+  right: 1rem;
   background-color: rgba(250, 250, 250, 0.5);
   height: 5rem;
   width: 5rem;
@@ -349,12 +368,14 @@ nav.navbar.navbar-expand-lg {
 
 .overlay-container {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 3px solid #f8f9fa;
   width: 25rem;
   height: 25rem;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 .overlay-container-smaller {
@@ -498,6 +519,30 @@ nav.navbar.navbar-expand-lg {
   transform: rotate(-90deg) translateX(-100%);
 }
 
+.row-btn-center {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.btn-index {
+  padding: 18px 32px;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid white;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-index:first-of-type {
+  margin-bottom: 3rem;
+}
+
 /* ABOUT SECTION */
 .scroll-down {
   position: absolute;
@@ -510,7 +555,7 @@ nav.navbar.navbar-expand-lg {
 .about-section {
   position: relative;
   min-height: 10em;
-  display: table-cell;
+  display: inline;
   vertical-align: middle;
 }
 
@@ -550,6 +595,11 @@ nav.navbar.navbar-expand-lg {
   padding-right: 15px;
 }
 
+.row-about {
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
 .about-image {
   object-fit: cover;
   width: 100%;
@@ -559,6 +609,12 @@ nav.navbar.navbar-expand-lg {
 .bulbs-image {
   object-fit: contain;
   margin-top: 10rem;
+}
+
+.col-image {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 
 .about-first-row,
@@ -571,6 +627,165 @@ nav.navbar.navbar-expand-lg {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.first-area,
+.second-area {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+}
+
+.img-col {
+  position: absolute;
+  width: 60%;
+  object-fit: cover;
+  top: 20%;
+  left: 10rem;
+}
+
+.img-col-right {
+  position: absolute;
+  width: 55%;
+  right: 10rem;
+  object-fit: cover;
+  top: 10%;
+}
+
+.text-lateral-right {
+  position: absolute;
+  right: 10rem;
+  top: 0;
+  width: 40%;
+  z-index: 9;
+  background-color: #021822;
+  color: rgb(254, 255, 254);
+  height: 100%;
+}
+
+.text-lateral-right p,
+.text-lateral-left p {
+  padding: 3rem 1.5rem;
+}
+
+.text-lateral-left {
+  position: absolute;
+  left: 10rem;
+  top: 0;
+  width: 40%;
+  z-index: 9;
+  background-color: #021822;
+  color: rgb(254, 255, 254);
+  height: 100%;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.prices-section {
+  position: relative;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /*Remove this if you don't want the 3D effect */
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  margin: auto;
+}
+
+.hand-card {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 10;
+  color: white;
+  transform: rotate(-45deg);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-overlay {
+  position: absolute;
+  z-index: 9;
+  border: 2px solid white;
+  height: 20rem;
+  width: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front img {
+  height: 250px;
+  width: 250px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #021822;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  font-size: 4rem;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-card {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 60px;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: rgb(219, 98, 151);
+  border: 2px solid rgb(218, 162, 186);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* BENEFIT */
@@ -677,6 +892,43 @@ nav.navbar.navbar-expand-lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* SERVICES */
+
+.service-title {
+  font-size: 2.5rem;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+}
+
+.service-text {
+  padding-bottom: 5rem;
+}
+
+.flip-cards-area {
+  margin: 3rem 1rem;
+}
+
+.mockup-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+.ready-row {
+  height: 20rem;
+  background-image: url(media/images/blue-texture.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.icon-arrow {
+  font-size: 1.6rem;
+}
+
+.spaced-content {
+  margin: 5rem auto;
 }
 
 /* PROJECTS SECTION */
@@ -824,6 +1076,17 @@ footer {
   .project-title {
     font-size: 4rem;
   }
+  .row-btn-center {
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .flip-card,
+  .flip-card-front img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -875,10 +1138,17 @@ footer {
     transform: rotate(-90deg) translateX(-100%);
   }
   */
+  .btn-index:first-of-type {
+    margin-bottom: 0;
+  }
+  .row-btn-center {
+    bottom: 20rem;
+  }
   .company-name {
     font-size: 6rem;
   }
   .overlay-container {
+    top: 45%;
     width: 40rem;
     height: 40rem;
   }
@@ -943,15 +1213,24 @@ footer {
   }
 
   .title-section {
-    font-family: 4.5rem;
+    font-size: 7rem;
+  }
+  .spaced-content {
+    margin: 12rem 6rem;
   }
   .contact-form {
     width: 70%;
+  }
+  .mockup-image {
+    padding-bottom: 1rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .row-btn-center {
+    bottom: 10rem;
+  }
   .circle {
     left: 20rem;
   }
@@ -1004,5 +1283,8 @@ footer {
   }
   .project-title {
     font-size: 9rem;
+  }
+  .second-area {
+    margin-top: 10rem;
   }
 }

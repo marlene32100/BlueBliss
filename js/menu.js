@@ -2,6 +2,7 @@ function menu() {
   document.getElementById("menu-overlay").style.display = "block";
   document.getElementById("home-container").style.display = "none";
   document.getElementById("contact-overlay").style.display = "none";
+  document.getElementById("footer").style.display = "none";
 
   let links = document.getElementsByClassName("link-item");
 
@@ -9,6 +10,7 @@ function menu() {
     document.getElementById("menu-overlay").style.display = "none";
     document.getElementById("contact-overlay").style.display = "block";
     document.getElementById("home-container").style.display = "block";
+    document.getElementById("footer").style.display = "block";
   };
 
   document.getElementById("closing-icon").addEventListener("click", closeMenu);

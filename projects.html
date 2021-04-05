@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="pingback" href="http://www.blueblissstudio.com" />
-    <title>Blue Bliss Studio -web agency in Knivsta-</title>
+    <title>Blue Bliss Studio -web agency-</title>
 
     <!-- style and script resources -->
 
@@ -223,7 +223,10 @@
       <i class="fas fa-times closing-icon" id="closing-icon"></i>
     </div>
 
-    <div class="container-fluid px-0 home-container" id="home-container">
+    <div
+      class="container-fluid px-0 home-container bg-black"
+      id="home-container"
+    >
       <!--First block-->
       <!--Navigation Bar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -246,10 +249,8 @@
           id="navbarTogglerDemo02"
         >
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -258,7 +259,7 @@
               <a href="services.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link active" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -273,89 +274,110 @@
         ></a>
       </div>
 
-      <!--HOME PAGE SECTION-->
+      <!--PROJECTS SECTION-->
       <div
-        class="justify-content-center align-items-center w-100 vh-100 px-0 container"
-        id="home-page"
+        class="justify-content-center align-items-center container-fluid bg-black project-section"
+        id="projects-section"
       >
-        <video playsinline autoplay muted loop id="home-page-video">
-          <source src="media/video/sea.mp4" type="video/mp4" />
-        </video>
-        <!--
-        <div class="circle container" id="animate-heart">
-          <h3 class="text-centered white-custom">
-            Blue <br />Bliss <br />Studio
-          </h3>
-        </div>
-      
-        <div
-          class="container key-words"
-          id="experience-text"
-          onclick="highlight()"
-        >
-          <h2 class="highlight-text">Experience</h2>
-        </div>
-        <div
-          class="container key-words"
-          id="competitive-text"
-          onclick="highlight()"
-        >
-          <h2 class="highlight-text">Competitive</h2>
-        </div>
-        <div
-          class="container key-words"
-          id="creative-text"
-          onclick="highlight()"
-        >
-          <h2 class="highlight-text">Creative</h2>
-        </div>
-        <div class="container key-words" id="image-text" onclick="highlight()">
-          <h2 class="highlight-text">Image</h2>
-        </div>
-         -->
-        <div class="overlay-container">
-          <div class="overlay-container-smaller">
-            <div class="content-overlay text-center">
-              <h1 class="company-name">Blue Bliss Studio</h1>
-              <h2 class="company-subtitle">Web agency</h2>
+        <div class="row w-100">
+          <div class="col-12 col-title-section text-center my-3">
+            <h1 class="title-section">Projects</h1>
+          </div>
+          <div class="col-12 col-project-section">
+            <div class="bottom-section" id="animated-text">
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="number-project white-custom">1.</p>
+                  <a
+                    href="https://marlene32100.github.io/WIAM/"
+                    target="blank"
+                    rel="noopener"
+                  >
+                    <h2 class="d-inline-block project-title pl-3">
+                      W.I.A.Museum
+                    </h2>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="number-project white-custom">2.</p>
+                  <a
+                    href="https://marlene32100.github.io/nordicGlamping/"
+                    target="blank"
+                    rel="noopener"
+                  >
+                    <h2 class="d-inline project-title pl-3">Nordic Glamping</h2>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="number-project white-custom">3.</p>
+                  <a
+                    href="https://getmytattoo.herokuapp.com/"
+                    target="blank"
+                    rel="noopener"
+                  >
+                    <h2 class="d-inline-block project-title pl-3">
+                      Get My Tattoo
+                    </h2>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="number-project white-custom">4.</p>
+                  <a
+                    href="https://sherocks.herokuapp.com/"
+                    target="blank"
+                    rel="noopener"
+                  >
+                    <h2 class="d-inline-block project-title pl-3">She Rocks</h2>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="number-project white-custom">5.</p>
+                  <a
+                    href="http://karolinaloniewska.se"
+                    target="blank"
+                    rel="noopener"
+                  >
+                    <h2 class="d-inline-block project-title pl-3">Karolina</h2>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row row-btn-center">
-          <div class="col-12" style="text-align: center">
-            <a class="btn btn-light btn-index" href="about.html">Services</a>
-            <a class="btn btn-light btn-index" href="projects.html"
-              >Portfolio</a
-            >
+        <footer class="bg-black mt-5" id="footer">
+          <h4 class="pt-5">Blue Bliss Studio</h4>
+          <address>
+            Dammgatan 36, 741 47 Knivsta <br />
+            Sweden
+          </address>
+          <div class="row">
+            <div class="col footer-icon mb-5">
+              <a
+                href="mailto:katia@blueblissstudio.com"
+                target="blank"
+                rel="noopener"
+              >
+                <i class="far fa-envelope footer-icon mx-3"></i
+              ></a>
+              <a
+                href="https://github.com/marlene32100"
+                target="blank"
+                rel="noopener"
+              >
+                <i class="fab fa-github footer-icon mx-3"></i
+              ></a>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
-
-      <footer class="bg-black mt-5" id="footer">
-        <h4 class="pt-5">Blue Bliss Studio</h4>
-        <address>
-          Dammgatan 36, 741 47 Knivsta <br />
-          Sweden
-        </address>
-        <div class="row">
-          <div class="col footer-icon mb-5">
-            <a
-              href="mailto:katia@blueblissstudio.com"
-              target="blank"
-              rel="noopener"
-            >
-              <i class="far fa-envelope footer-icon mx-3"></i
-            ></a>
-            <a
-              href="https://github.com/marlene32100"
-              target="blank"
-              rel="noopener"
-            >
-              <i class="fab fa-github footer-icon mx-3"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
     </div>
 
     <script

@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="pingback" href="http://www.blueblissstudio.com" />
-    <title>Blue Bliss Studio -web agency in Knivsta-</title>
+    <title>Blue Bliss Studio -web agency- About</title>
 
     <!-- style and script resources -->
 
@@ -223,7 +223,7 @@
       <i class="fas fa-times closing-icon" id="closing-icon"></i>
     </div>
 
-    <div class="container-fluid px-0 home-container" id="home-container">
+    <div class="container-fluid px-0 home-container " id="home-container">
       <!--First block-->
       <!--Navigation Bar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -246,13 +246,13 @@
           id="navbarTogglerDemo02"
         >
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
+                >Home</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a href="services.html" class="nav-link">Services</a>
@@ -275,88 +275,180 @@
 
       <!--HOME PAGE SECTION-->
       <div
-        class="justify-content-center align-items-center w-100 vh-100 px-0 container"
-        id="home-page"
+        class="justify-content-center align-items-center wv-100 px-5 container-fluid"
+        id="about-page"
       >
-        <video playsinline autoplay muted loop id="home-page-video">
-          <source src="media/video/sea.mp4" type="video/mp4" />
-        </video>
-        <!--
-        <div class="circle container" id="animate-heart">
-          <h3 class="text-centered white-custom">
-            Blue <br />Bliss <br />Studio
-          </h3>
-        </div>
       
-        <div
-          class="container key-words"
-          id="experience-text"
-          onclick="highlight()"
+
+
+        <section
+          class="justify-content-center align-items-center w-100 container mx-auto about-section"
+          id="about-section"
         >
-          <h2 class="highlight-text">Experience</h2>
-        </div>
-        <div
-          class="container key-words"
-          id="competitive-text"
-          onclick="highlight()"
-        >
-          <h2 class="highlight-text">Competitive</h2>
-        </div>
-        <div
-          class="container key-words"
-          id="creative-text"
-          onclick="highlight()"
-        >
-          <h2 class="highlight-text">Creative</h2>
-        </div>
-        <div class="container key-words" id="image-text" onclick="highlight()">
-          <h2 class="highlight-text">Image</h2>
-        </div>
-         -->
-        <div class="overlay-container">
-          <div class="overlay-container-smaller">
-            <div class="content-overlay text-center">
-              <h1 class="company-name">Blue Bliss Studio</h1>
-              <h2 class="company-subtitle">Web agency</h2>
+          <div class="row mb-5">
+            <div class="col-12 text-center my-3">
+              <h1 class="title-section mb-3">About</h1>
             </div>
           </div>
-        </div>
-        <div class="row row-btn-center">
-          <div class="col-12" style="text-align: center">
-            <a class="btn btn-light btn-index" href="about.html">Services</a>
-            <a class="btn btn-light btn-index" href="projects.html"
-              >Portfolio</a
-            >
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="mb-5">
+                Blue Bliss Studio is a individual web agency with focus on design and
+                marketing for small companies or individuals.
+                <br />
+                <br />
+                I tailor your website on your needs, keeping in mind your goals
+                and the user experience.
+              </p>
+            </div>
           </div>
+
+          <!--Only for mobile and tablets-->
+          <div class="d-block d-lg-none">
+            <!--First Row-->
+            <div class="row row-about">
+              <div class="col-12 col-md-6 mt-3">
+                <img src="media/images/home.png" alt="" class="col-image">
+              </div>
+              <div class="col-12 col-md-6">
+                <h3 class="text-center mt-5 blue-text">Need a fully customized project?</h3>
+                <p>
+                  So nice to hear! <br /><br />
+                  If you are not in a hurry, I will design, code and test a
+                  fully functional website only for you. <br /><br />
+                  -first, you tell me what are your goals; <br />-I analyze
+                  your case study and sketch a project for you; <br />-after
+                  that, I code it from scratch; <br />-I make the layout responsive on all
+                  browsers and devices; <br />-I add intermediate SEO
+                  optimization; <br />-I test it and fix bugs.
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-cta mb-3">
+                    <a href="projects.html" class="white">
+                      See examples</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Second Row-->
+            <div class="row row-about mt-5">
+              <div class="col-12 col-md-6 mt-3">
+               <img src="media/images/nordicG.png" alt="" class="col-image">
+              </div>
+              <div class="col-12 col-md-6">
+                <h3 class="text-center mt-5 blue-text">
+                  Or maybe you want to save time and money?
+                </h3>
+                <p>
+                  I have a solution for you!
+                  <br /><br />
+                  Let me speed up the process with a ready-to-go project!<br /><br /> You
+                  need only to provide images and text, I'll take care of
+                  everything else in a shorter time!
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-cta mb-3">
+                    <a href="contact.html" class="white"> Tell me!</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Only for desktop-->
+          <div class="d-none d-lg-block">
+          <!--First row-->
+          <div class="first-area">
+              <picture>
+                <img src="media/images/home.png" class="img-col" alt="Image of a website sketch on paper with some pencils aligned on the desk">
+            </picture>
+            
+           <div class="text-lateral-right">
+                  <h3 class="text-center mt-5">Need a fully customized project?</h3>
+                  <p>
+                    So nice to hear! <br /><br />
+                    If you are not in a hurry, I will design, code and test a
+                    fully functional website only for you. <br /><br />
+                    -first, you tell me what are your goals; <br />-I analyze
+                    your case study and sketch a project for you; <br />-after
+                    that, I code it from scratch; <br />-I make the layout responsive on all
+                    browsers and devices; <br />-I add intermediate SEO
+                    optimization; <br />-I test it and fix bugs.
+                  </p>
+                  <div class="text-center">
+                    <button class="btn btn-cta mb-3">
+                      <a href="projects.html" class="white">
+                        See examples</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              
+          </div>
+
+          <!--Second row-->
+            <div class="second-area">
+          
+                  <div class="text-lateral-left">
+                <h3 class="text-center mt-5">
+                  Or maybe you want to save time and money?
+                </h3>
+                <p>
+                  I have a solution for you!
+                  <br /><br />
+                  Let me speed up the process with a ready-to-go project!<br /><br /> You
+                  need only to provide images and text, I'll take care of
+                  everything else in a shorter time!
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-cta mb-3">
+                    <a href="contact.html" class="white"> Tell me!</a>
+                  </button>
+                </div>
+                  </div>
+              
+                <picture>
+  
+                  <img src="media/images/nordicG.png" class="img-col-right pr-3" alt="Image of a laptop on a desk with some flowers and a camera">
+              </picture>
+          </div>
+        </div>
+
+          </section>
+
+        </div>
+        
+      </div>
+      
+    </div>
+    
+
+    <footer class="bg-black mt-5" id="footer">
+      <h4 class="pt-5">Blue Bliss Studio</h4>
+      <address>
+        Dammgatan 36, 741 47 Knivsta <br />
+        Sweden
+      </address>
+      <div class="row">
+        <div class="col footer-icon mb-5">
+          <a
+            href="mailto:katia@blueblissstudio.com"
+            target="blank"
+            rel="noopener"
+          >
+            <i class="far fa-envelope footer-icon mx-3"></i
+          ></a>
+          <a
+            href="https://github.com/marlene32100"
+            target="blank"
+            rel="noopener"
+          >
+            <i class="fab fa-github footer-icon mx-3"></i
+          ></a>
         </div>
       </div>
-
-      <footer class="bg-black mt-5" id="footer">
-        <h4 class="pt-5">Blue Bliss Studio</h4>
-        <address>
-          Dammgatan 36, 741 47 Knivsta <br />
-          Sweden
-        </address>
-        <div class="row">
-          <div class="col footer-icon mb-5">
-            <a
-              href="mailto:katia@blueblissstudio.com"
-              target="blank"
-              rel="noopener"
-            >
-              <i class="far fa-envelope footer-icon mx-3"></i
-            ></a>
-            <a
-              href="https://github.com/marlene32100"
-              target="blank"
-              rel="noopener"
-            >
-              <i class="fab fa-github footer-icon mx-3"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
