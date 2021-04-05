@@ -647,7 +647,10 @@ nav.navbar.navbar-expand-lg {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
+.flip-card-overlay {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
