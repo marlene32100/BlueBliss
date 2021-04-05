@@ -647,7 +647,8 @@ nav.navbar.navbar-expand-lg {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-.flip-card-overlay {
+.flip-card-overlay,
+.hand-card {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
