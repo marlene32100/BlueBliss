@@ -291,6 +291,15 @@ nav.navbar.navbar-expand-lg {
 .fixed-top {
   z-index: 9000;
 }
+.relative-container {
+  position: relative;
+}
+.x-y-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* HOME PAGE */
 
@@ -532,6 +541,10 @@ nav.navbar.navbar-expand-lg {
   object-fit: cover;
   top: 20%;
   left: 10rem;
+  -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
 }
 
 .img-col-right {
@@ -541,6 +554,10 @@ nav.navbar.navbar-expand-lg {
   -o-object-fit: cover;
   object-fit: cover;
   top: 10%;
+  -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
 }
 
 .text-lateral-right {
@@ -707,6 +724,16 @@ nav.navbar.navbar-expand-lg {
 
 /* SERVICES */
 
+.image-col img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+}
+
 .service-title {
   font-size: 2.5rem;
   font-family: "Kanit", sans-serif;
@@ -721,6 +748,10 @@ nav.navbar.navbar-expand-lg {
   margin: 3rem 1rem;
 }
 
+.responsive-design-div {
+  margin-top: 3rem;
+}
+
 .mockup-image {
   width: 100%;
   height: auto;
@@ -730,6 +761,7 @@ nav.navbar.navbar-expand-lg {
 }
 .ready-row {
   height: 20rem;
+  margin: 3rem 0;
 }
 
 .icon-arrow {
@@ -741,7 +773,8 @@ nav.navbar.navbar-expand-lg {
   font-size: 2rem;
 }
 
-.spaced-content-title {
+.spaced-content-title,
+.spaced-content-title-left {
   font-family: "Kanit", sans-serif;
   font-size: 5rem;
   font-weight: 600;
@@ -1000,7 +1033,8 @@ footer {
     font-size: 7rem;
   }
   .spaced-content {
-    margin: 12rem 6rem;
+    margin: 6rem 1rem;
+    font-size: 1.6rem;
   }
   .contact-form {
     width: 70%;
@@ -1018,13 +1052,23 @@ footer {
   .spaced-content-title {
     font-size: 7rem;
     text-align: right;
+    padding-right: 1rem;
   }
-  .spaced-content {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .spaced-content-title-left {
+    font-size: 7rem;
+    text-align: left;
+    padding-left: 1rem;
+    margin-top: 3rem;
   }
   .flip-cards-area {
     padding-top: 3rem;
+  }
+  .ready-row {
+    height: 25rem;
+    margin: 12rem 0;
+  }
+  .responsive-design-div {
+    margin-top: 6rem;
   }
 }
 
@@ -1048,6 +1092,13 @@ footer {
   }
   .contact-form {
     width: 60%;
+  }
+  .spaced-content-title,
+  .spaced-content-title-left {
+    font-size: 9rem;
+  }
+  .reverted-row {
+    flex-direction: column-reverse;
   }
 }
 

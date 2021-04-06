@@ -272,11 +272,18 @@
 
          <section class="prices-section">
            <h1 class="title-section">Services & Prices</h1>
-           <img src="media/images/mockup.png" alt="Example of responsive website design" class="mockup-image">
-           <h2 class="spaced-content-title"><span class="d-none d-md-block spaced-content-title">Responsive </span>Design</h2>
-           <p class="spaced-content text-center">All my websites are mobile-first designed and coded: they will look great on mobile phones, tablets and desktops.<br /><br />
+           <picture>
+            <source srcset="media/images/mockup.png" media="(min-width: 1200px)" />
+            <source srcset="media/images/mockup-1200.png" media="(min-width: 992px)" />
+            <source srcset="media/images/mockup-992.png" media="(min-width: 768px)" />
+            <source srcset="media/images/mockup-768.png" media="(min-width: 576px)" />
+            <img src="media/images/mockup-576.png" alt="Example of responsive website design" class="mockup-image">
+          </picture>
+           <div class="bg-black responsive-design-div">
+           <h2 class="spaced-content-title white"><span class="d-none d-md-block spaced-content-title white">Responsive </span>Design</h2>
+           <p class="spaced-content text-center white">All my websites are mobile-first designed and coded: they will look great on mobile phones, tablets and desktops.<br /><br />
           I will not make just a website: for each customer I will do three services in one.<br /><br /></p>
-          
+        </div>
           <div class="row">
             <div class="col-12 col-md-4">
               <h2 class="service-title"> Analyze the strategy</h2>
@@ -292,12 +299,29 @@
               <p class="service-text">Finally, I will put everything together coding from scratch your website.
               I will test it on multiple devices and browsers, making sure there are no bugs</p></div>
           </div>
+
           <div class="row spaced-content">
-            <div class="col-12 text-center">
-              <p class="spaced-content">At the end of the project, you will receive not only the final website, 
+            <!--ONLY FOR MOBILE AND TABLET-->
+            <div class="d-block col-12 d-lg-none text-center bg-black mb-5">
+              <p class="spaced-content white">At the end of the project, you will receive not only the final website, 
             but also all the documentation about the work I have done.</p>
           </div>
+            <!--ONLY FOR DESKTOP-->
+            <div class="d-none d-lg-block col-lg-4 text-center bg-black relative-container">
+              <p class="spaced-content white x-y-centered">At the end of the project, you will receive not only the final website, 
+            but also all the documentation about the work I have done.</p>
+          </div>
+            <div class="col-12 col-lg-8 image-col">
+              <picture>
+                <source srcset="media/images/doc.png" media="(min-width: 992px)" />
+                <source srcset="media/images/doc-lg.png" media="(min-width: 768px)" />
+                <img src="media/images/doc-md.png" alt="Example of website development documentation">
+              </picture>
+              
+            </div>
+            
         </div>
+
         <div class="row ready-row text-center bg-black">
           <div class="col-12">
             <p class="white mt-5 mb-5 ready-to-work">Ready to work together?</p>
@@ -307,7 +331,9 @@
             </div></a>
         </div>
       </div>
-           
+
+      <div>
+      <h2 class="spaced-content-title"><span class="d-none d-md-block spaced-content-title">Choose your </span>Service</h2>
           <div class="row flip-cards-area">
            <!--Flip Card 1-->
            <div class="col-12 col-md-6 col-lg-4 px-0 mb-3">
@@ -425,6 +451,7 @@
            </div>
             </div>
        </div>
+      </div>
          </section>
         </div>
         
