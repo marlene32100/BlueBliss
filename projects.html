@@ -195,6 +195,12 @@
         });
       });
     </script>
+    <!-- GSAP-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -290,6 +296,10 @@
         class="justify-content-center align-items-center container-fluid bg-black project-section"
         id="projects-section"
       >
+        <div class="project-image-wrapper">
+          <div class="project-image" id="project-image"></div>
+        </div>
+
         <div class="row w-100">
           <div class="col-12 col-title-section text-center my-3">
             <h1 class="title-section white">Projects</h1>
@@ -297,12 +307,16 @@
           <div class="col-12 col-project-section">
             <div class="bottom-section" id="animated-text">
               <div class="row">
-                <div class="col-12 text-right">
-                  <p class="number-project white-custom">1.</p>
+                <div class="col-12 text-right col-project">
+                  <p class="number-project white-custom" id="first-project">
+                    1.
+                  </p>
                   <a
                     href="https://marlene32100.github.io/WIAM/"
                     target="blank"
                     rel="noopener"
+                    id="first-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline-block project-title pl-3">
                       W.I.A.M. Museum
@@ -311,24 +325,28 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right col-project">
                   <p class="number-project white-custom">2.</p>
                   <a
                     href="https://marlene32100.github.io/nordicGlamping/"
                     target="blank"
                     rel="noopener"
+                    id="second-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline project-title pl-3">Nordic Glamping</h2>
                   </a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right col-project">
                   <p class="number-project white-custom">3.</p>
                   <a
                     href="https://getmytattoo.herokuapp.com/"
                     target="blank"
                     rel="noopener"
+                    id="third-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline-block project-title pl-3">
                       Get My Tattoo
@@ -337,36 +355,42 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right col-project">
                   <p class="number-project white-custom">4.</p>
                   <a
                     href="https://sherocks.herokuapp.com/"
                     target="blank"
                     rel="noopener"
+                    id="fourth-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline-block project-title pl-3">She Rocks</h2>
                   </a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right col-project">
                   <p class="number-project white-custom">5.</p>
                   <a
                     href="http://karolinaloniewska.se"
                     target="blank"
                     rel="noopener"
+                    id="fifth-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline-block project-title pl-3">Karolina</h2>
                   </a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right col-project">
                   <p class="number-project white-custom">6.</p>
                   <a
                     href="http://marlene32100.github.io/Gsap/"
                     target="blank"
                     rel="noopener"
+                    id="sixth-link"
+                    class="project-link"
                   >
                     <h2 class="d-inline-block project-title pl-3">
                       Chef's kitchen
@@ -377,6 +401,7 @@
             </div>
           </div>
         </div>
+
         <footer class="bg-black mt-5" id="footer">
           <h4 class="pt-5">Blue Bliss Studio</h4>
           <address>
@@ -420,7 +445,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="js/preview.js" async defer></script>
     <script src="js/menu.js" async></script>
-    <script src="js/sendEmail.js" async></script>
   </body>
 </html>

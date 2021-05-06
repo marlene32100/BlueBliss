@@ -848,6 +848,10 @@ nav.navbar.navbar-expand-lg {
   position: relative;
 }
 
+.col-project {
+  padding-top: 5rem;
+}
+
 .title-project-lateral {
   bottom: 15rem;
 }
@@ -880,6 +884,25 @@ nav.navbar.navbar-expand-lg {
 
 .bottom-section a:hover {
   color: #1277a6;
+}
+
+.project-image-wrapper {
+  width: 50%;
+  height: 50vh;
+  position: fixed;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image {
+  position: fixed;
+  top: 20%;
+  width: 0;
+  height: 50vh;
+  background: url(./media/images/create.jpg) norepeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
 }
 
 /* CONTACT SECTION */
