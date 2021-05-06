@@ -6,29 +6,50 @@
 <html class="no-js" lang="en-US">
   <!--<![endif]-->
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-192704613-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-192704613-1");
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="pingback" href="http://www.blueblissstudio.com" />
-    <title>Blue Bliss Studio -web agency- About</title>
+    <title>Blue Bliss Studio -Web Agency- About</title>
 
     <!-- style and script resources -->
-
+<!-- anti-flicker snippet (recommended)  -->
+<style>
+  .async-hide {
+    opacity: 0 !important;
+  }
+</style>
+<script>
+  (function (a, s, y, n, c, h, i, d, e) {
+    s.className += " " + y;
+    h.start = 1 * new Date();
+    h.end = i = function () {
+      s.className = s.className.replace(RegExp(" ?" + y), "");
+    };
+    (a[n] = a[n] || []).hide = h;
+    setTimeout(function () {
+      i();
+      h.end = null;
+    }, c);
+    h.timeout = c;
+  })(window, document.documentElement, "async-hide", "dataLayer", 4000, {
+    "GTM-5DQWG5V": true,
+  });
+</script>
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-5DQWG5V");
+</script>
+<!-- End Google Tag Manager -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -85,7 +106,7 @@
       content=" Your website with a living heart. Design, creativity, business, responsiveness, SEO optimization, social media"
     />
     <meta property="og:url" content="http://www.blueblissstudio.com" />
-    <meta property="og:site_name" content="Blue Bliss Studio -web agency-" />
+    <meta property="og:site_name" content="Blue Bliss Studio -Web Agency-" />
     <meta property="og:image" content="images/hom-banner-compressed.png" />
     <meta
       property="og:image:secure_url"
@@ -280,18 +301,45 @@
               <h1 class="title-section mb-3">About</h1>
             </div>
           </div>
-          <div class="row">
+          <div class="row presentation-row mb-5">
+            
             <div class="col-12 text-center">
+            <div class="presentation-overlay">
               <p class="mb-5">
-                Blue Bliss Studio is a individual web agency with focus on design and
+                Blue Bliss Studio is a Swedish web agency with focus on design and
                 marketing for small companies or individuals.
                 <br />
+                <br />
+                I am in Knivsta, Sweden, but I work worldwide.<br />
                 <br />
                 I tailor your website on your needs, keeping in mind your goals
                 and the user experience.
               </p>
             </div>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-12 mb-5">
+              <h2 class="spaced-content-title">Behind <br><span class="spaced-content-title"> the scenes</span></h2>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-md-3 col-lg-2">
+                  <img src="media/images/katia.png" alt="Katia De Bon fullstack web developer" class="avatar mx-auto">
+                </div>
+                <div class="col-12 col-md-9 col-lg-10">
+                  <p class="mt-5">My name is Katia, <br />I am a fullstack web developer with a deep love for frontend and design. <br><br>
+                    After an academical education in art history and having worked for years with sales and marketing in Italy, I decided
+                    to put my knowledge all together in the direction of web development.
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="welcome">
+          <p class="spaced-content-title-left">Welcome to<br>Blue Bliss Studio!</p>
+        </div>
 
           <!--Only for mobile and tablets-->
           <div class="d-block d-lg-none">
