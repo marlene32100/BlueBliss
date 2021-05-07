@@ -181,6 +181,12 @@
         });
       });
     </script>
+    <!-- GSAP-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -275,6 +281,7 @@
         class="justify-content-center align-items-center w-100 vh-100 px-0 container"
         id="home-page"
       >
+        <!--
         <video
           playsinline
           autoplay
@@ -285,7 +292,7 @@
         >
           <source src="media/video/sea.mp4" type="video/mp4" />
         </video>
-        <!--
+        
         <div class="circle container" id="animate-heart">
           <h3 class="text-centered white-custom">
             Blue <br />Bliss <br />Studio
@@ -318,7 +325,7 @@
         </div>
          -->
         <div class="overlay-container">
-          <div class="overlay-container-smaller">
+          <div class="overlay-container-smaller" id="overlay-container">
             <div class="content-overlay text-center">
               <h1 class="company-name">Blue Bliss Studio</h1>
               <h2 class="company-subtitle">Web agency</h2>
@@ -327,17 +334,25 @@
         </div>
         <div class="row row-btn-center">
           <div class="col-12 col-sm-6 text-center mb-5">
-            <a class="btn btn-light btn-index" href="services.html">Services</a>
+            <a
+              class="btn btn-light btn-index"
+              id="first-btn"
+              href="services.html"
+              >Services</a
+            >
           </div>
           <div class="col-12 col-sm-6 text-center">
-            <a class="btn btn-light btn-index" href="projects.html"
+            <a
+              class="btn btn-light btn-index"
+              id="second-btn"
+              href="projects.html"
               >Portfolio</a
             >
           </div>
         </div>
       </div>
 
-      <footer class="bg-black mt-5" id="footer">
+      <footer class="bg-black" id="footer">
         <h4 class="pt-5">Blue Bliss Studio</h4>
         <address>
           Dammgatan 36, 741 47 Knivsta <br />
@@ -379,6 +394,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="js/home.js"></script>
     <script src="js/menu.js" async></script>
     <script src="js/sendEmail.js" async></script>
   </body>

@@ -293,10 +293,20 @@ nav.navbar.navbar-expand-lg {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 /* HOME PAGE */
+
+#home-page {
+  background: url(./media/images/solarPanel.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .contact-overlay {
   position: fixed;
@@ -388,6 +398,8 @@ nav.navbar.navbar-expand-lg {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -404,9 +416,9 @@ nav.navbar.navbar-expand-lg {
 }
 
 #home-page {
+  position: relative;
   min-width: 100vw;
   min-height: 100vh;
-  position: relative;
 }
 
 #home-page-video {
@@ -447,8 +459,10 @@ nav.navbar.navbar-expand-lg {
 .avatar {
   height: 25rem;
   width: 25rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
+  -o-object-position: center center;
   object-position: center center;
 }
 
@@ -471,10 +485,13 @@ nav.navbar.navbar-expand-lg {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .about-video {
+  -o-object-fit: contain;
   object-fit: contain;
   height: 100%;
   width: 100%;
@@ -761,6 +778,7 @@ nav.navbar.navbar-expand-lg {
 
 .image-col img {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
   -webkit-box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
@@ -891,7 +909,11 @@ nav.navbar.navbar-expand-lg {
   height: 50vh;
   position: fixed;
   margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -1019,6 +1041,9 @@ footer {
 /* MEDIA QUERIES */
 
 @media (min-width: 360px) {
+  .row-btn-center {
+    bottom: 15%;
+  }
   .presentation-row {
     height: 70vh;
     background-image: url(media/images/blue-texture-576.jpg);
@@ -1172,12 +1197,18 @@ footer {
     font-size: 9rem;
   }
   .reverted-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .row-btn-center {
+    bottom: 10%;
+  }
   .text-container-about {
     padding-left: 8rem;
     padding-right: 8rem;

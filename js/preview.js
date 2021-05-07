@@ -10,7 +10,9 @@ const imagePreview = document.getElementById("project-image");
 
 let hover = tl.to(".project-image", 0.5, {
   width: "50%",
-  ease: Power2.easeOut,
+  duration: 10,
+  ease: "slow(0.9,0.1, false)",
+  y: 100,
 });
 
 for (i = 0; i < title.length; i++) {
@@ -52,9 +54,3 @@ sixthLink.addEventListener(
   "mouseover",
   () => (imagePreview.style.backgroundImage = "url('./media/images/chef.png')")
 );
-
-/*
-document.getElementById("first-link").addEventListener("hover", function () {
-  document.getElementById("project-image").src = "./media/images/create.jpg";
-});
-*/
