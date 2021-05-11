@@ -6,6 +6,7 @@ const thirdLink = document.getElementById("third-link");
 const fourthLink = document.getElementById("fourth-link");
 const fifthLink = document.getElementById("fifth-link");
 const sixthLink = document.getElementById("sixth-link");
+const seventhLink = document.getElementById("seventh-link");
 const imagePreview = document.getElementById("project-image");
 
 let hover = tl.to(".project-image", 0.5, {
@@ -53,4 +54,10 @@ fifthLink.addEventListener(
 sixthLink.addEventListener(
   "mouseover",
   () => (imagePreview.style.backgroundImage = "url('./media/images/chef.png')")
+);
+
+seventhLink.addEventListener(
+  "mouseover",
+  () =>
+    (imagePreview.style.backgroundImage = "url('./media/images/weather.png')")
 );
