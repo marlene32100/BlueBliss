@@ -301,11 +301,14 @@ nav.navbar.navbar-expand-lg {
 /* HOME PAGE */
 
 #home-page {
-  background: url(./media/images/solarPanel.jpg) no-repeat center center fixed;
+  background: url(./media/images/blue-serenity-360.jpg) no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .contact-overlay {
@@ -336,7 +339,7 @@ nav.navbar.navbar-expand-lg {
 
 .overlay-container {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -421,6 +424,7 @@ nav.navbar.navbar-expand-lg {
   min-height: 100vh;
 }
 
+/*
 #home-page-video {
   position: fixed;
   -o-object-fit: cover;
@@ -431,6 +435,7 @@ nav.navbar.navbar-expand-lg {
   padding: 0;
   z-index: -1;
 }
+*/
 
 .row-btn-center {
   position: absolute;
@@ -1041,6 +1046,10 @@ footer {
 /* MEDIA QUERIES */
 
 @media (min-width: 360px) {
+  #home-page {
+    background: url(./media/images/blue-serenity-576.jpg) no-repeat center
+      center fixed;
+  }
   .row-btn-center {
     bottom: 15%;
   }
@@ -1080,6 +1089,10 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+  #home-page {
+    background: url(./media/images/blue-serenity-768.jpg) no-repeat center
+      center fixed;
+  }
   .presentation-row {
     height: 70vh;
     background-image: url(media/images/blue-texture-768.jpg);
@@ -1109,6 +1122,10 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #home-page {
+    background: url(./media/images/blue-serenity-992.jpg) no-repeat center
+      center fixed;
+  }
   .presentation-row {
     height: 70vh;
     background-image: url(media/images/blue-texture-992.jpg);
@@ -1174,6 +1191,10 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #home-page {
+    background: url(./media/images/blue-serenity-1200.jpg) no-repeat center
+      center fixed;
+  }
   .presentation-row {
     height: 70vh;
     background-image: url(media/images/blue-texture.jpg);
@@ -1206,6 +1227,10 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #home-page {
+    background: url(./media/images/blue-serenity.jpg) no-repeat center center
+      fixed;
+  }
   .row-btn-center {
     bottom: 10%;
   }
