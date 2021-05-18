@@ -25,6 +25,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #021822;
 }
 
 span {
@@ -124,6 +125,11 @@ a.nav-link {
 }
 
 .text-scroll-me {
+  font-size: 1.6rem;
+}
+
+.strong-text,
+.info-text {
   font-size: 1.6rem;
 }
 
@@ -301,14 +307,22 @@ nav.navbar.navbar-expand-lg {
 /* HOME PAGE */
 
 #home-page {
-  background: url(./media/images/blue-serenity-360.jpg) no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(./media/images/blue-serenity-576.jpg) no-repeat center center
+    scroll;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  top: 0;
+}
+
+#loader {
+  color: white;
+  left: 47%;
+  position: fixed;
+  top: 47%;
+  visibility: hidden;
+  z-index: 1;
 }
 
 .contact-overlay {
@@ -339,7 +353,7 @@ nav.navbar.navbar-expand-lg {
 
 .overlay-container {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -418,12 +432,6 @@ nav.navbar.navbar-expand-lg {
   transform: translate(-50%, -50%);
 }
 
-#home-page {
-  position: relative;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 /*
 #home-page-video {
   position: fixed;
@@ -439,7 +447,7 @@ nav.navbar.navbar-expand-lg {
 
 .row-btn-center {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 50%;
   -webkit-transform: translate(-47%);
   -ms-transform: translate(-47%);
@@ -457,6 +465,81 @@ nav.navbar.navbar-expand-lg {
   border: 2px solid white;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-light:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+#info-page {
+  padding: 0;
+}
+
+.info-row {
+  width: 100vw;
+  margin: 0;
+}
+
+.info-col {
+  width: 100vw;
+}
+
+.image-info-col {
+  width: 25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left center;
+  object-position: left center;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.image-info-col-brochure {
+  width: 25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left center;
+  object-position: left center;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.questions-list {
+  list-style: none;
+}
+
+.btn-second-cta {
+  border: 1px solid white;
+  padding: 8px 32px;
+  color: whitesmoke;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.btn-second-cta:hover,
+.btn-second-cta:focus {
+  -webkit-box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
+  box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
+  background-color: #1277a6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button a:hover {
+  color: white;
+  font-weight: 800;
+}
+
+.review-image {
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* ABOUT SECTION */
@@ -1011,6 +1094,10 @@ a .footer-icon:hover {
   display: none;
 }
 
+.review-title {
+  font-size: 4rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -1047,8 +1134,8 @@ footer {
 
 @media (min-width: 360px) {
   #home-page {
-    background: url(./media/images/blue-serenity-576.jpg) no-repeat center
-      center fixed;
+    background: url(./media/images/blue-serenity-768.jpg) no-repeat center
+      center scroll;
   }
   .row-btn-center {
     bottom: 15%;
@@ -1091,7 +1178,7 @@ footer {
 @media (min-width: 576px) {
   #home-page {
     background: url(./media/images/blue-serenity-768.jpg) no-repeat center
-      center fixed;
+      center scroll;
   }
   .presentation-row {
     height: 70vh;
@@ -1124,7 +1211,7 @@ footer {
 @media (min-width: 768px) {
   #home-page {
     background: url(./media/images/blue-serenity-992.jpg) no-repeat center
-      center fixed;
+      center scroll;
   }
   .presentation-row {
     height: 70vh;
@@ -1193,7 +1280,7 @@ footer {
 @media (min-width: 992px) {
   #home-page {
     background: url(./media/images/blue-serenity-1200.jpg) no-repeat center
-      center fixed;
+      center scroll;
   }
   .presentation-row {
     height: 70vh;
@@ -1229,7 +1316,7 @@ footer {
 @media (min-width: 1200px) {
   #home-page {
     background: url(./media/images/blue-serenity.jpg) no-repeat center center
-      fixed;
+      scroll;
   }
   .row-btn-center {
     bottom: 10%;

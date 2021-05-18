@@ -1,4 +1,5 @@
 const overlay = document.getElementById("overlay-container");
+
 const tl = gsap.timeline({ paused: true, reversed: true });
 
 const animation = tl

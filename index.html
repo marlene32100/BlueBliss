@@ -85,7 +85,6 @@
       name="robots"
       content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1"
     />
-    <link rel="canonical" href="" />
     <!--open graph meta tags for social sites and search engines-->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -190,6 +189,12 @@
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -280,8 +285,16 @@
       </div>
 
       <!--HOME PAGE SECTION-->
+
       <div
-        class="justify-content-center align-items-center w-100 vh-100 px-0 container"
+        class="
+          justify-content-center
+          align-items-center
+          w-100
+          vh-100
+          px-0
+          container
+        "
         id="home-page"
       >
         <!--
@@ -355,6 +368,202 @@
         </div>
       </div>
 
+      <!-- Info section -->
+      <section class="info-section">
+        <div
+          class="
+            justify-content-center
+            align-items-center
+            wv-100
+            container-fluid
+          "
+          id="info-page"
+        >
+          <h1 class="title-section">Web Design & Graphics</h1>
+          <div class="row info-row">
+            <div class="col-12 col-md-6 bg-black info-col first-col">
+              <h2 class="spaced-content-title white mt-5">Websites</h2>
+              <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                  <p class="mt-5">
+                    <b class="info-text white">If:</b>
+                  </p>
+                  <ul class="questions-list">
+                    <li class="info-text white">
+                      You are looking for a website with a style
+                      <strong class="strong-text">tailored on your needs</strong
+                      ><br />
+                    </li>
+                    <li class="info-text white">
+                      You don't have
+                      <strong class="strong-text">time</strong> or enough
+                      <strong class="strong-text">knowledge</strong> to take
+                      care of your website on your own <br />
+                    </li>
+                    <li class="info-text white">
+                      You are looking for a
+                      <strong class="strong-text">modern and easy</strong>
+                      solution <br />
+                    </li>
+                  </ul>
+                  <p class="text-right">
+                    <strong class="info-text white"
+                      >You are on the right place!</strong
+                    >
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-center mb-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <img
+                        src="media/images/chefDesktop.png"
+                        alt="Example of modern website"
+                        class="image-info-col"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href="projects.html"
+                        class="white btn btn-second-cta mb-3"
+                      >
+                        Portfolio</a
+                      >
+                      <a href="contact.html" class="white btn btn-cta mb-3"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 info-col second-col">
+              <h2 class="spaced-content-title mt-5">Graphics</h2>
+              <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                  <p class="mt-5">
+                    <b class="info-text">If:</b>
+                  </p>
+                  <ul class="questions-list">
+                    <li class="info-text">
+                      You need a cool graphic for your
+                      <strong class="strong-text">brochures</strong>,
+                      <strong class="strong-text">flyers</strong>,
+                      <strong class="strong-text">posters</strong>, ... <br />
+                    </li>
+                    <li class="info-text">
+                      You are looking for a
+                      <strong class="strong-text">modern graphic</strong> <br />
+                    </li>
+                    <li class="info-text">
+                      You need captivating
+                      <strong class="strong-text">social media posts</strong>
+                      <br />
+                    </li>
+                  </ul>
+                  <p class="text-right">
+                    <strong class="info-text">Perfect! Just tell me</strong>
+                  </p>
+                </div>
+                <div class="col-12 col-md-6 mb-5 text-center">
+                  <div class="row">
+                    <div class="col-12">
+                      <img
+                        src="media/images/restaurantBrochure.jpeg"
+                        alt="Example of modern website"
+                        class="image-info-col-brochure"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href="projects.html"
+                        class="white btn btn-second-cta mb-3 bg-black"
+                      >
+                        Portfolio</a
+                      >
+                      <a href="contact.html" class="white btn btn-cta mb-3"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Review section-->
+      <div
+        class="
+          justify-content-center
+          align-items-center
+          wv-100
+          container-fluid
+          customer-section
+        "
+      >
+        <h2 class="spaced-content-title-left review-title mb-5">
+          Happy customers
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="media/images/chefGreg.jpg"
+              alt="Image of person"
+              class="review-image mb-5"
+            />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="service-text">
+              "I am very happy with brochures and website."
+            </p>
+            <p class="service-text">Grzegorz G., Sweden</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="media/images/avatar.jpg"
+              alt="Image of person"
+              class="review-image mb-5"
+            />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="service-text">"Thank you for the website!"</p>
+            <p class="service-text">Karolina L., Sweden</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="media/images/cri.jpg"
+              alt="Image of person"
+              class="review-image mb-5"
+            />
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="service-text">
+              "I would definitely recommend Blue Bliss. Not only for the
+              graphics, but also for the marketing support which is a big plus"
+            </p>
+            <p class="service-text">Cristina D., Italy</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
       <footer class="bg-black" id="footer">
         <h4 class="pt-5">Blue Bliss Studio</h4>
         <address>
@@ -389,6 +598,10 @@
       </footer>
     </div>
 
+    <div id="loader">
+      <i class="fa fa-spinner fa-3x fa-spin"></i>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -404,8 +617,10 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/home.js"></script>
-    <script src="js/menu.js" async></script>
-    <script src="js/sendEmail.js" async></script>
+    <script scr="js/loader.js"></script>
+    <script src="js/scroll.js" async defer></script>
+    <script src="js/home.js" async defer></script>
+    <script src="js/menu.js" async defer></script>
+    <script src="js/sendEmail.js" async defer></script>
   </body>
 </html>
