@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="pingback" href="http://www.blueblissstudio.com" />
     <title>
-      Web Agency in Knivsta Contact - Web Design and Social Media | Blue Bliss
+      Contact - Web Design and Social Media | Blue Bliss
       by Katia De Bon-
     </title>
 
@@ -278,8 +278,12 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
+            <li class="nav-item dropdown">
+              <a href="services.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="websites.html">Websites</a>
+                <a class="dropdown-item" href="graphics.html">Graphics</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">Projects</a>
@@ -306,7 +310,14 @@
 
       <!--CONTACT SECTION-->
       <div
-        class="justify-content-center align-items-center w-100 container-fluid px-0 contact-section"
+        class="
+          justify-content-center
+          align-items-center
+          w-100
+          container-fluid
+          px-0
+          contact-section
+        "
         id="contact-section"
       >
         <div class="row w-100 mx-auto">
@@ -334,7 +345,9 @@
                     data-dismiss="alert"
                     aria-label="Close"
                   >
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"></span>
+                      <i class="far fa-times-circle"></i
+                    ></span>
                   </button>
                 </div>
                 <form
@@ -418,7 +431,9 @@
                       />
                       <label class="form-check-label" for="gridCheck">
                         I accept terms and conditions as described in the
-                        <a href="privacy.html" class="link-to-policy"
+                        <a
+                          href="privacy.html"
+                          class="link-to-policy policy-link"
                           >Privacy Policy</a
                         >.
                       </label>

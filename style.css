@@ -304,6 +304,10 @@ nav.navbar.navbar-expand-lg {
   transform: translate(-50%, -50%);
 }
 
+a.dropdown-item {
+  font-size: 1.4rem;
+}
+
 /* HOME PAGE */
 
 #home-page {
@@ -522,7 +526,8 @@ nav.navbar.navbar-expand-lg {
 .btn-second-cta:focus {
   -webkit-box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
   box-shadow: 0px 2px 8px 2px rgba(253, 253, 253, 0.2);
-  background-color: #1277a6;
+  background-color: white;
+  color: black;
 }
 
 a:hover {
@@ -583,6 +588,11 @@ button a:hover {
   object-fit: contain;
   height: 100%;
   width: 100%;
+}
+
+.introduction {
+  margin: auto;
+  width: 90%;
 }
 
 .scroll-down {
@@ -875,6 +885,14 @@ button a:hover {
     -8px -8px 12px 0 rgb(255 255 255 / 30%);
 }
 
+.image-laptop {
+  object-position: center center;
+  height: 40rem;
+  margin: auto;
+  width: 90%;
+  object-fit: cover;
+}
+
 .service-title {
   font-size: 2.5rem;
   font-family: "Kanit", sans-serif;
@@ -1079,11 +1097,41 @@ a .footer-icon:hover {
 }
 
 .alert {
-  width: 25rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
   margin: auto;
   margin-bottom: 3rem;
-  height: 5rem;
   line-height: 1.5rem;
+}
+
+.alert strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.alert button span {
+  font-size: 3rem;
+}
+
+.alert button span:before {
+  font-size: 1.6rem;
+  content: "close";
+}
+
+.alert-dismissible .close {
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  padding: 0.75rem 1.25rem;
+  color: inherit;
 }
 
 .alert strong {
@@ -1096,6 +1144,11 @@ a .footer-icon:hover {
 
 .review-title {
   font-size: 4rem;
+}
+
+.policy-link {
+  font-size: 1.6rem;
+  color: white;
 }
 
 /* FOOTER */
@@ -1137,6 +1190,10 @@ footer {
     background: url(./media/images/blue-serenity-768.jpg) no-repeat center
       center scroll;
   }
+
+  .overlay-container {
+    top: 40%;
+  }
   .row-btn-center {
     bottom: 15%;
   }
@@ -1170,6 +1227,12 @@ footer {
   .ready-row {
     height: 20rem;
     margin: 3rem 0;
+  }
+}
+
+@media (min-width: 411px) {
+  .row-btn-center {
+    bottom: 20%;
   }
 }
 
@@ -1232,6 +1295,11 @@ footer {
     width: 38rem;
   }
 
+  .introduction {
+    margin: auto;
+    width: 60%;
+  }
+
   .project-title {
     font-size: 7rem;
   }
@@ -1283,7 +1351,7 @@ footer {
       center scroll;
   }
   .presentation-row {
-    height: 70vh;
+    height: 50vh;
     background-image: url(media/images/blue-texture.jpg);
     background-size: cover;
     position: relative;
@@ -1309,6 +1377,16 @@ footer {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+  }
+  .introduction {
+    margin: auto;
+    width: 50%;
+  }
+  .first-area {
+    margin-bottom: 3rem;
+  }
+  .second-area {
+    margin-top: 3rem;
   }
 }
 

@@ -7,7 +7,7 @@ gsap.from(".title-section", {
   },
   opacity: 0,
   x: 400,
-  duration: 1,
+  duration: 1.5,
 });
 
 gsap.from(".first-col", {
@@ -17,7 +17,7 @@ gsap.from(".first-col", {
   },
   opacity: 0,
   x: -400,
-  duration: 1,
+  duration: 1.5,
 });
 
 gsap.from(".second-col", {
@@ -27,18 +27,15 @@ gsap.from(".second-col", {
   },
   opacity: 0,
   x: 900,
-  duration: 1,
+  duration: 1.5,
 });
 
-gsap.utils.toArray(".review-image").forEach((i) => {
-  gsap.from(i, {
-    scrollTrigger: {
-      trigger: i,
-      toggleActions: "restart none none none",
-    },
-    x: 1000,
-    ease: Power2.easeOut,
-    rotation: 360,
-    duration: 2.5,
-  });
+gsap.from(".customer-section", {
+  scrollTrigger: {
+    trigger: ".customer-section",
+    toggleActions: "restart none none none",
+  },
+  opacity: 0,
+  x: 900,
+  duration: 1.5,
 });
