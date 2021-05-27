@@ -1,6 +1,6 @@
 const overlay = document.getElementById("overlay-container");
 
-const tl = gsap.timeline({ paused: true, reversed: true });
+const tl = gsap.timeline({ paused: true });
 
 const animation = tl
   .from(".overlay-container", 1, {
